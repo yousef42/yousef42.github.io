@@ -1,8 +1,12 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { getProjectBySlug } from "@/data/projects";
+import { getProjectBySlug, getAllProjectSlugs } from "@/data/projects";
 import { ProjectGallery } from "@/components/ProjectGallery";
+
+export function generateStaticParams() {
+  return getAllProjectSlugs().map((slug) => ({ slug }));
+}
 
 export default async function ProjectPage({
   params,

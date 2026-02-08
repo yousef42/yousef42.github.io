@@ -38,6 +38,8 @@ export const skills: Skill[] = [
   { name: "RBAC", category: "معماری" },
   // ابزار و دواپس
   { name: "Git", category: "ابزارها" },
+  { name: "GitHub", category: "ابزارها" },
+  { name: "GitLab", category: "ابزارها" },
   { name: "Docker", category: "ابزارها" },
   { name: "MediatR", category: "ابزارها" },
   { name: "FluentValidation", category: "ابزارها" },
