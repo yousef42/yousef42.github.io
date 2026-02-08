@@ -26,38 +26,43 @@ const socialIcons = {
 
 export function ProfileHeader({ data }: { data: Profile }) {
   return (
-    <header className="flex flex-col items-center gap-6 pb-8 border-b border-foreground/10">
-      <div className="relative size-28 rounded-full overflow-hidden bg-foreground/10 shrink-0">
+    <header className="flex flex-col items-center gap-7 pb-10 border-b border-foreground/10">
+      <div className="relative size-32 rounded-full overflow-hidden bg-foreground/10 shrink-0 ring-2 ring-foreground/10 ring-offset-2 ring-offset-background">
         <Image
           src={data.photo}
           alt={data.name}
           fill
           className="object-cover"
-          sizes="112px"
+          sizes="128px"
           unoptimized
         />
       </div>
       <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold tracking-tight">{data.name}</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-foreground">
+          {data.name}
+        </h1>
         <a
           href={`mailto:${data.email}`}
-          className="text-foreground/80 hover:text-foreground block"
+          className="text-foreground/70 hover:text-foreground block text-sm transition-colors"
         >
           {data.email}
         </a>
         <a
           href={`tel:${data.phone.replace(/\s/g, "")}`}
-          className="text-foreground/80 hover:text-foreground block"
+          className="text-foreground/70 hover:text-foreground block text-sm transition-colors"
         >
           {data.phone}
         </a>
       </div>
-      <nav className="flex items-center gap-4" aria-label="شبکه‌های اجتماعی">
+      <nav
+        className="flex items-center gap-2"
+        aria-label="شبکه‌های اجتماعی"
+      >
         <a
           href={data.stackOverflow}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-foreground/70 hover:text-foreground p-2 rounded-lg hover:bg-foreground/5"
+          className="text-foreground/60 hover:text-foreground p-2.5 rounded-xl bg-foreground/5 hover:bg-foreground/10 transition-colors"
           title="Stack Overflow"
         >
           {socialIcons.stackOverflow}
@@ -66,7 +71,7 @@ export function ProfileHeader({ data }: { data: Profile }) {
           href={data.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-foreground/70 hover:text-foreground p-2 rounded-lg hover:bg-foreground/5"
+          className="text-foreground/60 hover:text-foreground p-2.5 rounded-xl bg-foreground/5 hover:bg-foreground/10 transition-colors"
           title="GitHub"
         >
           {socialIcons.github}
@@ -75,7 +80,7 @@ export function ProfileHeader({ data }: { data: Profile }) {
           href={data.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-foreground/70 hover:text-foreground p-2 rounded-lg hover:bg-foreground/5"
+          className="text-foreground/60 hover:text-foreground p-2.5 rounded-xl bg-foreground/5 hover:bg-foreground/10 transition-colors"
           title="LinkedIn"
         >
           {socialIcons.linkedin}

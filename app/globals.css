@@ -4,6 +4,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --muted: #737373;
+  --border: #e5e5e5;
+  --card: #fafafa;
 }
 
 @theme inline {
@@ -16,6 +19,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #a3a3a3;
+    --border: #262626;
+    --card: #171717;
   }
 }
 
@@ -23,4 +29,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Vazirmatn", sans-serif;
+}
+
+@layer utilities {
+  .section-heading {
+    @apply text-lg font-semibold text-foreground mb-3 flex items-center gap-2;
+  }
+  .section-heading::after {
+    content: "";
+    @apply flex-1 h-px bg-gradient-to-l from-foreground/20 to-transparent;
+  }
 }
