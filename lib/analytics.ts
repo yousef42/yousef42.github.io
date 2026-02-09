@@ -22,8 +22,14 @@ export interface AnalyticsEvent {
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
+function isLocal(): boolean {
+  if (typeof window === "undefined") return false;
+  const h = window.location.hostname;
+  return h === "localhost" || h === "127.0.0.1";
+}
+
 export function sendEvent(event: Omit<AnalyticsEvent, "visitor_id">): void {
-  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return;
+  if (isLocal() || !SUPABASE_URL || !SUPABASE_ANON_KEY) return;
   const visitor_id = getOrCreateVisitorId();
   const body: AnalyticsEvent = { ...event, visitor_id };
   fetch(`${SUPABASE_URL}/rest/v1/analytics_events`, {
@@ -40,7 +46,7 @@ export function sendEvent(event: Omit<AnalyticsEvent, "visitor_id">): void {
 }
 
 export function sendEventKeepalive(event: Omit<AnalyticsEvent, "visitor_id">): void {
-  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return;
+  if (isLocal() || !SUPABASE_URL || !SUPABASE_ANON_KEY) return;
   const visitor_id = getOrCreateVisitorId();
   const body = JSON.stringify({ ...event, visitor_id });
   fetch(`${SUPABASE_URL}/rest/v1/analytics_events`, {

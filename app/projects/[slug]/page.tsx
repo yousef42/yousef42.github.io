@@ -24,7 +24,7 @@ export default async function ProjectPage({
           href="/"
           className="inline-flex items-center gap-1.5 text-foreground/70 hover:text-foreground mb-8 px-3 py-2 rounded-xl hover:bg-foreground/5 transition-colors text-sm"
         >
-          ← بازگشت
+          بازگشت →
         </Link>
         <article className="space-y-8">
           <header className="flex flex-wrap items-center gap-4 rounded-2xl p-5 bg-foreground/[0.03] dark:bg-foreground/[0.06] border border-foreground/5">
