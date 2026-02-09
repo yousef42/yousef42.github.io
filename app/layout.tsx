@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  title: "رزومه",
+  title: "یوسف عبدل زاده",
   description: "رزومه و پورتفولیو",
 };
 
