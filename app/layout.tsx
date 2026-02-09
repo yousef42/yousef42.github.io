@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
   title: "رزومه",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <body className="antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );

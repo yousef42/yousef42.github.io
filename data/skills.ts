@@ -31,11 +31,16 @@ export const skills: Skill[] = [
   { name: "Clean Architecture", category: "معماری" },
   { name: "Clean Code", category: "معماری" },
   { name: "MVVM", category: "معماری" },
+  { name: "MVI", category: "معماری" },
   { name: "DDD", category: "معماری" },
   { name: "CQRS", category: "معماری" },
   { name: "Modular Monolith", category: "معماری" },
   { name: "Event Sourcing", category: "معماری" },
   { name: "RBAC", category: "معماری" },
+  // بات‌ها
+  { name: "بات تلگرام", category: "بات‌ها" },
+  { name: "بات بله", category: "بات‌ها" },
+  { name: "Telegram API", category: "بات‌ها" },
   // ابزار و دواپس
   { name: "Git", category: "ابزارها" },
   { name: "GitHub", category: "ابزارها" },
