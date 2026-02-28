@@ -1,0 +1,8 @@
+export const availableForItems: string[] = [
+  "طراحی MVP معماری‌محور",
+  "بازطراحی سیستم‌های Legacy",
+  "اندروید پرعملکرد با Compose",
+  "معماری Modular Monolith تا Microservices",
+  "Cross-platform با Flutter و CMP",
+  "Telegram Bot + Mini App",
+];

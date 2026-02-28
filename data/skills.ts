@@ -25,6 +25,9 @@ export const skills: Skill[] = [
   { name: "ASP.NET Core", category: "بک‌اند" },
   { name: "REST API", category: "بک‌اند" },
   { name: "SQL Server", category: "بک‌اند" },
+  { name: "PostgreSQL", category: "بک‌اند" },
+  { name: "MongoDB", category: "بک‌اند" },
+  { name: "Redis", category: "بک‌اند" },
   { name: "Entity Framework Core", category: "بک‌اند" },
   { name: "Dapper", category: "بک‌اند" },
   // معماری و الگوها

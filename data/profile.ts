@@ -7,6 +7,9 @@ export interface Profile {
   github: string;
   linkedin: string;
   about: string;
+  heroTitle: string;
+  heroSummary: string;
+  signature: string;
 }
 
 export const profile: Profile = {
@@ -15,8 +18,11 @@ export const profile: Profile = {
   phone: "09120590191",
   photo: "/images/projects/profile/profile.jpeg",
   stackOverflow: "https://stackoverflow.com/users/8553955/yousef-abbdolzadeh",
-  github: "https://github.com/your-username",
+  github: "https://github.com/yousef42",
   linkedin: "https://www.linkedin.com/in/yousef-abdolzadeh/",
+  heroTitle: "مهندس ارشد موبایل و بک‌اند",
+  heroSummary: "1M+ نصب فعال | Kotlin / Flutter / .NET | Architecture-first Delivery",
+  signature: "سیستم می‌سازم، نه فقط اپ",
   about:
-    "از سال ۱۳۹۷ و از اواخر دوران دانشجویی، مسیر حرفه‌ای خود را در حوزه برنامه‌نویسی آغاز کردم. فعالیت من با .NET و توسعه‌ی Android Native شروع شد و در همان سال‌ها وارد پروژه‌های واقعی و تجاری شدم. طی این سال‌ها به‌صورت تیمی و مستقل، اپلیکیشن‌هایی در حوزه‌های بیمه، مالی، مولتی‌مدیا، ارزهای دیجیتال و فروشگاهی طراحی و توسعه داده‌ام.\nعلاقه‌ی جدی من به یادگیری مداوم باعث شد مسیرم به این دو فناوری محدود نماند. با یادگیری و کار عملی در Flutter، Compose Multiplatform و توسعه‌ی وب، توانستم در پروژه‌های متنوع‌تری فعالیت کنم و راهکارهای کراس‌پلتفرم و مقیاس‌پذیر ارائه دهم.\nدر طول این سال‌ها همواره تلاش کرده‌ام علاوه بر کدنویسی، درک عمیقی از معماری نرم‌افزار، بهینه‌سازی عملکرد و تجربه کاربری داشته باشم. تمرکز من بر ارائه‌ی راهکارهای پایدار، قابل توسعه و متناسب با نیاز واقعی کسب‌وکارهاست.",
+    "کارشناسی مهندسی نرم‌افزار.\nاز سال ۱۳۹۷ مسیر حرفه‌ای من با .NET و Android Native شروع شد و خیلی زود وارد پروژه‌های واقعی و تجاری شدم. در ادامه، با Flutter، Compose Multiplatform، iOS و وب کار کردم تا بتوانم برای نیازهای متفاوت کسب‌وکار، راهکار چندسکویی و قابل نگه‌داری ارائه دهم.\nتمرکز من «تحویل سریع بدون قربانی‌کردن کیفیت معماری» است. در پروژه‌ها بسته به فاز محصول از Modular Monolith، Clean/Onion، CQRS و Event Sourcing استفاده می‌کنم و مرزهای دامنه را طوری طراحی می‌کنم که در صورت نیاز، مسیر مهاجرت به Microservices باز باشد.\nدر سمت موبایل نیز الگوهای MVVM و MVI را با Jetpack Compose و Flutter به‌کار می‌گیرم تا state-management، تست‌پذیری و توسعه‌پذیری بلندمدت محصول حفظ شود. هدف من ساخت سیستم‌هایی است که هم امروز جواب بدهند و هم فردا قابل توسعه باشند.",
 };

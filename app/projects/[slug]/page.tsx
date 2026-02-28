@@ -19,7 +19,7 @@ export default async function ProjectPage({
 
   return (
     <div className="min-h-screen">
-      <main className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
+      <main className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
         <Link
           href="/"
           className="inline-flex items-center gap-1.5 text-foreground/70 hover:text-foreground mb-8 px-3 py-2 rounded-xl hover:bg-foreground/5 transition-colors text-sm"
@@ -44,6 +44,64 @@ export default async function ProjectPage({
               <p className="text-foreground/55 text-sm mt-0.5">{project.type}</p>
             </div>
           </header>
+          {(project.demoUrl || project.videoUrl || project.cafeBazaarUrl || project.myketUrl) && (
+            <section className="rounded-2xl p-5 bg-foreground/[0.03] dark:bg-foreground/[0.06] border border-foreground/5">
+              <h2 className="text-sm font-semibold text-foreground/70 mb-3">دمو و لینک‌ها</h2>
+              <div className="flex flex-wrap gap-2">
+                {project.demoUrl && (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-foreground/5 text-sm font-medium transition-colors"
+                  >
+                    مشاهده دمو
+                  </a>
+                )}
+                {project.videoUrl && (
+                  <a
+                    href={project.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-foreground/5 text-sm font-medium transition-colors"
+                  >
+                    تماشا ویدئو
+                  </a>
+                )}
+                {project.cafeBazaarUrl && (
+                  <a
+                    href={project.cafeBazaarUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-foreground/5 text-sm font-medium transition-colors"
+                  >
+                    کافه‌بازار
+                  </a>
+                )}
+                {project.myketUrl && (
+                  <a
+                    href={project.myketUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-foreground/5 text-sm font-medium transition-colors"
+                  >
+                    مایکت
+                  </a>
+                )}
+              </div>
+              {project.demoGif && (
+                <div className="mt-4 relative aspect-video rounded-xl overflow-hidden bg-foreground/5">
+                  <Image
+                    src={project.demoGif}
+                    alt={`دمو ${project.title}`}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+              )}
+            </section>
+          )}
           <section className="rounded-2xl p-5 bg-foreground/[0.03] dark:bg-foreground/[0.06] border border-foreground/5">
             <h2 className="text-sm font-semibold text-foreground/70 mb-2">
               نقش من در پروژه

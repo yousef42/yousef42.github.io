@@ -9,6 +9,11 @@ export interface Project {
   myRole: string;
   technologies: string[];
   images: string[];
+  demoUrl?: string;
+  videoUrl?: string;
+  demoGif?: string;
+  cafeBazaarUrl?: string;
+  myketUrl?: string;
 }
 
 const navaImages = [
@@ -66,6 +71,16 @@ const safarmalImages = [
   "/images/projects/safarmal/Screenshot_20260208-171223_SafarMal.jpg",
 ];
 
+const miniAppEmojiFyImages = [
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.37.12.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.37.21.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.37.30.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.37.40.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.37.57.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.38.08.png",
+  "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.38.43.png",
+];
+
 export const projects: Project[] = [
   {
     slug: "safarmal",
@@ -115,6 +130,8 @@ export const projects: Project[] = [
       "View → ViewModel → UseCase → Repository → DataSource",
     ],
     images: navaImages,
+    cafeBazaarUrl: "https://cafebazaar.ir/app/ir.navayeheiat",
+    myketUrl: "https://myket.ir/app/ir.navayeheiat",
   },
   {
     slug: "gift20",
@@ -158,6 +175,30 @@ export const projects: Project[] = [
       "جاهای دیدنی، اخبار",
     ],
     images: refahNamaImages,
+  },
+  {
+    slug: "miniapp-emojify",
+    title: "EmojiFy (Lottie Bot)",
+    type: "بات تلگرام + Telegram Mini App",
+    logo: "/placeholder.svg",
+    image: miniAppEmojiFyImages[0],
+    shortDescription:
+      "بات تلگرام برای ساخت استیکر/ایموجی متحرک از قالب‌های Lottie (JSON/TGS) و لوگوی SVG. توسعه با Python و Telegram Bot API به‌همراه Mini App برای انتخاب پلن، تنظیم رنگ و پرداخت Stars.",
+    description:
+      "EmojiFy (Lottie Bot) یک بات تلگرام برای ساخت مجموعه استیکر و ایموجی متحرک است. هسته پروژه با Python نوشته شده و با Telegram Bot API (python-telegram-bot) جریان کامل گفتگو، فرمان‌ها، callbackها، آپلود فایل‌ها و پرداخت مدیریت می‌شود. در منطق پردازش، بات فایل‌های Lottie با فرمت JSON/TGS را گرفته، مقادیر لایه‌ها (text/fill/stroke/path/timing/json_path) را جایگزین می‌کند، لوگوی SVG را به‌صورت rule-based داخل انیمیشن تزریق می‌کند و خروجی نهایی را به TGS تبدیل می‌کند. علاوه بر بات، یک Telegram Mini App با HTML/CSS/JavaScript پیاده‌سازی شده تا کاربر بتواند استیکرها را انتخاب کند، رنگ‌ها و تنظیمات را تغییر دهد و سفارش را با Telegram Stars نهایی کند.",
+    myRole: "طراحی و پیاده‌سازی کامل بات و Mini App (Python + Telegram APIs)",
+    technologies: [
+      "Python 3",
+      "python-telegram-bot (Telegram Bot API)",
+      "Telegram Mini App / WebApp API",
+      "Lottie JSON/TGS Processing (gzip)",
+      "SVG Logo Injection (rule-based)",
+      "SQLite (users/templates/orders/payments)",
+      "Telegram Payments (PRO + Stars)",
+      "aiohttp (WebApp server/API)",
+      "HTML, CSS, JavaScript (Mini App UI)",
+    ],
+    images: miniAppEmojiFyImages,
   },
   {
     slug: "babiame",

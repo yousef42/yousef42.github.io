@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     "یوسف عبدل زاده",
     "رزومه یوسف عبدل زاده",
+    "yousef abdolzadeh",
+    "yousef abdolzadeh resume",
     "رزومه برنامه‌نویس",
     "توسعه‌دهنده اندروید",
     "توسعه‌دهنده Flutter",
@@ -48,9 +50,10 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "یوسف عبدل زاده",
+  alternateName: "Yousef Abdolzadeh",
   url: siteUrl,
   jobTitle: "توسعه‌دهنده نرم‌افزار",
-  description: "رزومه یوسف عبدل زاده — توسعه‌دهنده اندروید، iOS و وب با تجربه در Kotlin، Flutter، .NET و React.",
+  description: "رزومه یوسف عبدل زاده (Yousef Abdolzadeh) — توسعه‌دهنده اندروید، iOS و وب با تجربه در Kotlin، Flutter، .NET و React.",
   knowsAbout: [
     "Android",
     "Kotlin",

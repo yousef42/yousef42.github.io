@@ -9,8 +9,12 @@ export function Skills({ items }: { items: Skill[] }) {
   }, {});
 
   return (
-    <section className="space-y-4 rounded-2xl p-5 bg-foreground/[0.03] dark:bg-foreground/[0.06] border border-foreground/5">
+    <section id="skills" className="scroll-mt-20 space-y-4 rounded-2xl p-5 bg-foreground/[0.03] dark:bg-foreground/[0.06] border border-foreground/5">
       <h2 className="section-heading">مهارت‌ها</h2>
+      <p className="text-sm text-foreground/70 leading-relaxed">
+        تمرکز اصلی من روی تحویل محصول قابل توسعه است؛ بنابراین مهارت‌ها را ترکیبی از موبایل، بک‌اند،
+        معماری و ابزارهای عملیاتی نگه می‌دارم.
+      </p>
       <div className="flex flex-wrap gap-x-2 gap-y-3">
         {Object.entries(byCategory).map(([category, skillsInCat]) => (
           <div key={category} className="flex flex-wrap items-center gap-2">
