@@ -21,6 +21,10 @@ export const skills: Skill[] = [
   { name: "TypeScript", category: "وب" },
   { name: "Tailwind CSS", category: "وب" },
   { name: "Chart.js", category: "وب" },
+  { name: "Redux / Redux Thunk", category: "وب" },
+  { name: "React Query", category: "وب" },
+  { name: "Material UI", category: "وب" },
+  { name: "Vite", category: "وب" },
   { name: "WordPress", category: "وب" },
   { name: "WooCommerce", category: "وب" },
   // بک‌اند
@@ -37,6 +41,7 @@ export const skills: Skill[] = [
   { name: "Entity Framework Core", category: "بک‌اند" },
   { name: "Dapper", category: "بک‌اند" },
   { name: "Socket.IO / WebRTC", category: "بک‌اند" },
+  { name: "SignalR", category: "بک‌اند" },
   { name: "Firebase Cloud Messaging", category: "بک‌اند" },
   // معماری و الگوها
   { name: "Clean Architecture", category: "معماری" },

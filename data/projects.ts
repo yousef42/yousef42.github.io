@@ -94,7 +94,43 @@ const nadRevivalImages = [
   "/images/projects/nadrevival/blog.png",
 ];
 
+const shinancePanelImages = [
+  "/images/projects/shinance-panel/logo.png",
+];
+
 export const projects: Project[] = [
+  {
+    slug: "shinance-panel",
+    title: "Shinance Panel",
+    type: "پنل کاربری صرافی رمزارز و سامانه معاملات آنلاین",
+    logo: shinancePanelImages[0],
+    image: shinancePanelImages[0],
+    imageFit: "contain",
+    shortDescription:
+      "پنل جامع صرافی رمزارز با بازار و معاملات Real-time، سفارش‌های Limit و Market، معامله سریع، مدیریت کیف پول، واریز و برداشت، احراز هویت و گزارش‌های مالی.",
+    description:
+      "Shinance Panel وب‌اپلیکیشن اصلی کاربران صرافی Shinance است و چرخه کامل فعالیت کاربر در یک پلتفرم معاملاتی را پوشش می‌دهد. داشبورد، ارزش کل دارایی و موجودی قابل معامله را نمایش می‌دهد و بخش بازارها امکان مشاهده جفت‌ارزها، قیمت و تغییرات ۲۴ ساعته و افزودن بازارهای منتخب را فراهم می‌کند. در صفحه معامله، دفتر سفارش و معاملات انجام‌شده به‌صورت Real-time با SignalR به‌روزرسانی می‌شوند و کاربران می‌توانند سفارش Limit یا Market ثبت و سفارش‌های باز را مدیریت کنند. معامله سریع، کیف پول تفکیک‌شده دارایی‌ها، واریز و برداشت ریالی، واریز و برداشت رمزارز بر اساس شبکه، تاریخچه گردش حساب، درخواست‌ها و گزارش کامل سفارش‌ها از دیگر جریان‌های اصلی سامانه هستند. فرایندهای ثبت‌نام و ورود با OTP، refresh token و مدیریت session، احراز هویت و بارگذاری مدارک، تایید ایمیل و حساب بانکی، مدیریت سطح کاربری، ورود دومرحله‌ای و کد امنیتی برداشت در پنل پیاده‌سازی شده‌اند. سیستم تیکت و پاسخ پشتیبانی، معرفی دوستان، راهنمای تعاملی صفحات، اعلان‌های Firebase و رابط چندزبانه RTL/LTR نیز بخشی از تجربه کاربری پروژه هستند. ساختار Front-end شامل routing ماژولار و lazy loading، مدیریت state عمومی با Redux و Thunk، مدیریت server state با React Query و یک لایه متمرکز Axios برای REST API، refresh خودکار توکن و صف‌کردن درخواست‌های هم‌زمان است؛ پروژه با Vite برای محیط production ساخته می‌شود.",
+    myRole:
+      "توسعه و نگهداری Front-end پنل کاربری، یکپارچه‌سازی REST API و قابلیت‌های معاملاتی Real-time",
+    technologies: [
+      "React 18, JavaScript, TypeScript",
+      "Vite",
+      "Redux, Redux Thunk",
+      "React Query (Server State)",
+      "React Router, Lazy Loading",
+      "Material UI, SCSS, RTL/LTR",
+      "Axios, REST API, Refresh Token Interceptor",
+      "SignalR (داده‌های معاملاتی Real-time)",
+      "Firebase Messaging, Analytics, Performance",
+      "JWT, OTP, Two-Factor Authentication",
+      "Formik, Yup",
+      "ApexCharts, ECharts, TradingView",
+      "i18n (فارسی، انگلیسی و زبان‌های دیگر)",
+      "Responsive Web Application",
+    ],
+    images: shinancePanelImages,
+    demoUrl: "https://panel.shinance.net",
+  },
   {
     slug: "nad-revival",
     title: "NAD+ Revival",
