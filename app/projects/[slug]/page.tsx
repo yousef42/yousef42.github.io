@@ -55,7 +55,7 @@ export default async function ProjectPage({
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-foreground/5 text-sm font-medium transition-colors"
                   >
-                    مشاهده دمو
+                    مشاهده وب‌سایت پروژه
                   </a>
                 )}
                 {project.videoUrl && (

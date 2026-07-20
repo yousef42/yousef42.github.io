@@ -70,7 +70,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 rel="noopener noreferrer"
                 className="text-sm px-3 py-1 rounded-lg bg-foreground/10 hover:bg-foreground/15 text-foreground transition-colors"
               >
-                دمو
+                وب‌سایت
               </a>
             )}
             {project.videoUrl && (
