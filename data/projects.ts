@@ -4,6 +4,7 @@ export interface Project {
   type: string;
   logo: string;
   image: string;
+  imageFit?: "cover" | "contain";
   shortDescription: string;
   description: string;
   myRole: string;
@@ -81,7 +82,42 @@ const miniAppEmojiFyImages = [
   "/images/projects/MiniApp-EmojiFy/Screenshot 1404-12-09 at 16.38.43.png",
 ];
 
+const kargoshaImages = [
+  "/images/projects/kargosha/k-argosha.png",
+];
+
 export const projects: Project[] = [
+  {
+    slug: "kar-gosha",
+    title: "کارگشا",
+    type: "پلتفرم معرفی کسب‌وکار، شبکه اجتماعی و ارتباط Real-time",
+    logo: kargoshaImages[0],
+    image: kargoshaImages[0],
+    imageFit: "contain",
+    shortDescription:
+      "پلتفرم جامع ثبت و جست‌وجوی کسب‌وکار با نقشه نشان، فید و استوری، پیام مستقیم و تماس صوتی Real-time؛ توسعه Full-stack با Next.js، Node.js، Express، MongoDB، Socket.IO و WebRTC.",
+    description:
+      "کارگشا یک پلتفرم جامع برای ثبت، معرفی و کشف کسب‌وکارهاست. کاربران با OTP یا رمز عبور وارد می‌شوند، پروفایل شخصی یا تجاری می‌سازند و کسب‌وکارها را بر اساس دسته‌بندی، شهر، جست‌وجوی متنی و نقشه نشان پیدا می‌کنند. بخش اجتماعی شامل فید محتوا، استوری و هایلایت، دنبال‌کردن و درخواست فالو، لایک، نظر، امتیاز و نقد، ذخیره رسانه یا کسب‌وکار و گزارش محتوای نامناسب است. پیام‌رسان داخلی از گفتگو، ارسال فایل و پیام صوتی و ویرایش یا حذف پیام پشتیبانی می‌کند؛ تماس صوتی نیز با WebRTC و Socket.IO به‌صورت Real-time پیاده‌سازی شده و برای تماس‌های ورودی از Firebase Cloud Messaging استفاده می‌شود. مدل درآمدی پروژه شامل پکیج و اشتراک، ارتقای حساب PRO، تمدید کسب‌وکار، کد تخفیف و پرداخت آنلاین زرین‌پال است. علاوه بر پنل کاربر، پنل مدیریت مبتنی بر RBAC برای مدیریت کاربران، مدیران و نقش‌ها، دسته‌بندی‌ها، زبان و ترجمه‌ها، پرداخت‌ها، اشتراک‌ها، گزارش‌ها، نظرات، استوری‌ها و تنظیمات سیستم وجود دارد. پنل بازاریاب نیز کاربران معرفی‌شده، کیف پول و محاسبه پورسانت را مدیریت می‌کند.",
+    myRole: "طراحی و توسعه Full-stack، REST API، پنل مدیریت و قابلیت‌های Real-time",
+    technologies: [
+      "JavaScript",
+      "Next.js 16, React 19, Tailwind CSS 4",
+      "Node.js, Express.js (REST API)",
+      "MongoDB, Mongoose",
+      "Socket.IO + WebRTC (پیام و تماس صوتی Real-time)",
+      "Firebase Cloud Messaging (Push Notification)",
+      "JWT, OTP, bcrypt, Kavenegar",
+      "Neshan Maps, OpenLayers",
+      "Zarinpal Payment Gateway",
+      "RBAC (ادمین، نقش‌ها و Permissionها)",
+      "Multer, Sharp, FFmpeg (پردازش تصویر، ویدئو و فایل)",
+      "چندزبانه و مدیریت ترجمه‌ها",
+      "Recharts (داشبورد و گزارش‌ها)",
+      "Nginx / Linux deployment",
+    ],
+    images: kargoshaImages,
+    demoUrl: "https://kar-gosha.com",
+  },
   {
     slug: "safarmal",
     title: "سفرمال",
@@ -178,7 +214,7 @@ export const projects: Project[] = [
   },
   {
     slug: "miniapp-emojify",
-    title: "EmojiFy (Lottie Bot)",
+    title: "EmojiFy ",
     type: "بات تلگرام + Telegram Mini App",
     logo: "/placeholder.svg",
     image: miniAppEmojiFyImages[0],

@@ -17,12 +17,14 @@ export const skills: Skill[] = [
   // وب و فرانت
   { name: "React.js", category: "وب" },
   { name: "Next.js", category: "وب" },
+  { name: "JavaScript", category: "وب" },
   { name: "TypeScript", category: "وب" },
   { name: "Tailwind CSS", category: "وب" },
   { name: "Chart.js", category: "وب" },
   // بک‌اند
   { name: "C# / .NET", category: "بک‌اند" },
   { name: "ASP.NET Core", category: "بک‌اند" },
+  { name: "Node.js / Express.js", category: "بک‌اند" },
   { name: "REST API", category: "بک‌اند" },
   { name: "SQL Server", category: "بک‌اند" },
   { name: "PostgreSQL", category: "بک‌اند" },
@@ -30,6 +32,8 @@ export const skills: Skill[] = [
   { name: "Redis", category: "بک‌اند" },
   { name: "Entity Framework Core", category: "بک‌اند" },
   { name: "Dapper", category: "بک‌اند" },
+  { name: "Socket.IO / WebRTC", category: "بک‌اند" },
+  { name: "Firebase Cloud Messaging", category: "بک‌اند" },
   // معماری و الگوها
   { name: "Clean Architecture", category: "معماری" },
   { name: "Clean Code", category: "معماری" },

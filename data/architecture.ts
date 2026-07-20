@@ -42,6 +42,13 @@ export const architectureFocusItems: ArchitectureFocusItem[] = [
     patterns: ["Jetpack Compose", "MVVM", "MVI", "State Hoisting", "Unidirectional Data Flow"],
     relatedProjects: ["نوا", "Nava-tv", "پروژه‌های AndroidStudioProjects"],
   },
+  {
+    title: "ارتباط Real-time و پردازش رسانه",
+    summary:
+      "در سیستم‌های تعاملی، جریان پیام و تماس را مستقل از رابط کاربری طراحی می‌کنم و برای قطعی شبکه، چند دستگاه و اعلان خارج از برنامه سناریوی مشخص دارم.",
+    patterns: ["Socket.IO", "WebRTC", "FCM", "Media Pipeline", "Connection Recovery"],
+    relatedProjects: ["کارگشا"],
+  },
 ];
 
 export const architectureDiagrams: ArchitectureDiagram[] = [
@@ -133,5 +140,23 @@ export const architectureDiagrams: ArchitectureDiagram[] = [
       VM --> Reducer[State Reducer]
       Reducer --> State[UI State]
       State --> UI`,
+  },
+  {
+    id: "kargosha-realtime",
+    label: "KarGosha Real-time",
+    summary: "معماری پیام‌رسان، تماس صوتی و اعلان تماس ورودی در پروژه کارگشا.",
+    focus: ["Socket Authentication", "WebRTC Signaling", "FCM Fallback", "MongoDB Persistence"],
+    mermaid: `flowchart LR
+      ClientA[Caller - Next.js] --> Signal[Socket.IO Signaling]
+      ClientB[Receiver - Next.js] --> Signal
+      Signal --> Auth[JWT Authentication]
+      Signal --> Calls[Active Call State]
+      ClientA <--> RTC[WebRTC Audio Stream]
+      RTC <--> ClientB
+      Calls --> FCM[Firebase Push]
+      FCM --> ClientB
+      ClientA --> API[Express REST API]
+      ClientB --> API
+      API --> Mongo[(MongoDB Messages)]`,
   },
 ];
