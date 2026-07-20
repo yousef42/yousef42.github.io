@@ -86,7 +86,46 @@ const kargoshaImages = [
   "/images/projects/kargosha/k-argosha.png",
 ];
 
+const nadRevivalImages = [
+  "/images/projects/nadrevival/home.png",
+  "/images/projects/nadrevival/product.png",
+  "/images/projects/nadrevival/cart.png",
+  "/images/projects/nadrevival/checkout.png",
+  "/images/projects/nadrevival/blog.png",
+];
+
 export const projects: Project[] = [
+  {
+    slug: "nad-revival",
+    title: "NAD+ Revival",
+    type: "فروشگاه آنلاین WordPress و WooCommerce برای بازار بریتانیا",
+    logo: nadRevivalImages[0],
+    image: nadRevivalImages[0],
+    shortDescription:
+      "فروشگاه آنلاین انگلیسی‌زبان برای بازار بریتانیا با قالب اختصاصی WordPress، تجربه خرید سفارشی WooCommerce، پرداخت Stripe و Apple Pay، اشتراک محصولات و وبلاگ محتوایی.",
+    description:
+      "NAD+ Revival یک وب‌سایت فروشگاهی انگلیسی‌زبان برای عرضه محصولات NAD+ در بازار بریتانیاست. رابط کاربری پروژه با یک قالب اختصاصی WordPress و طراحی واکنش‌گرا پیاده‌سازی شده و مسیر کامل خرید، از معرفی محصول و گالری تصاویر تا مدیریت تعداد، سبد خرید، محاسبه ارسال، ثبت سفارش و پرداخت آنلاین را پوشش می‌دهد. صفحات اصلی، فروشگاه، جزئیات محصول، سبد خرید، تسویه‌حساب، حساب کاربری و ایمیل‌های سفارش WooCommerce متناسب با هویت بصری برند سفارشی‌سازی شده‌اند. درگاه Stripe امکان پرداخت با کارت و Apple Pay را فراهم می‌کند و افزونه‌های WooCommerce Subscriptions و All Products for Subscriptions برای فروش دوره‌ای و اشتراکی در ساختار پروژه قرار دارند. وبلاگ پروژه با دسته‌بندی، فیلتر و مرتب‌سازی مقالات برای بازاریابی محتوایی توسعه یافته است. ثبت نظر محصول و به‌روزرسانی سبد خرید به‌صورت AJAX، خبرنامه اختصاصی، فرم تماس، ارسال ایمیل با SMTP، مدیریت رضایت کوکی و بهینه‌سازی سرعت و کش نیز بخشی از امکانات فنی پروژه هستند.",
+    myRole:
+      "طراحی و توسعه قالب اختصاصی WordPress، سفارشی‌سازی WooCommerce و پیاده‌سازی تجربه کامل فروشگاه",
+    technologies: [
+      "PHP, WordPress",
+      "WooCommerce",
+      "قالب اختصاصی WordPress",
+      "WooCommerce Template Overrides",
+      "JavaScript, AJAX",
+      "HTML5, CSS3, Tailwind CSS",
+      "MySQL",
+      "Stripe, Apple Pay",
+      "WooCommerce Subscriptions",
+      "طراحی واکنش‌گرا (Responsive Design)",
+      "Blog, SEO, Content Marketing",
+      "WP Mail SMTP",
+      "Cookie Consent",
+      "WP Rocket, LiteSpeed",
+    ],
+    images: nadRevivalImages,
+    demoUrl: "https://nadrevival.com",
+  },
   {
     slug: "kar-gosha",
     title: "کارگشا",
